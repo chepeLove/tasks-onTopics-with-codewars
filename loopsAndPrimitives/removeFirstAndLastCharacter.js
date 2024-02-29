@@ -4,7 +4,7 @@
 // than two characters.
 
 const removeFirstAndLastCharacter = (str) => {
- return str.split('').slice(1,str.length-1).join('')
+ return str.slice(1,str.length-1)
 }
 
 console.log(removeFirstAndLastCharacter('eloquent'))
