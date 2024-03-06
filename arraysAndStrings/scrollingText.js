@@ -27,4 +27,16 @@ function scrollingText(text){
   return arr
 }
 
+function scrollingText1(text) {
+  let temp = []
+  let save = text.split('')
+  for (let i = 0; i < save.length; i++) {
+    let movingEl = text.split('').splice(0, i)
+    let restEl = text.split('').splice(i, text.length)
+    let result = restEl.concat(movingEl).join('').toUpperCase()
+    temp.push(result)
+  }
+  return temp
+}
+
 console.log(scrollingText("abc"))
